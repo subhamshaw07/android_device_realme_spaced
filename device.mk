@@ -303,6 +303,9 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay 
 
+# Properties
+include $(LOCAL_PATH)/configs/props/vendor_logtag.mk
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
