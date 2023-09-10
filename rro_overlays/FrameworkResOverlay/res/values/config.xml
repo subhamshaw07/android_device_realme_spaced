@@ -506,4 +506,7 @@
      correctly use them when installed on your device.  Otherwise, keep this disabled
      so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
+
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">realme/RMX3151/RE54B4L1:13/SP1A.210812.016/R.125b34c-1:user/release-keys</string>
 </resources>
