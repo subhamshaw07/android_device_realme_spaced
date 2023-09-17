@@ -14,6 +14,18 @@ $(call inherit-product, device/realme/spaced/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Rising OS Stuff with GApps
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_CORE_GMS := true
+WITH_GMS := true
+
+# Maintainer Stuff
+RISING_MAINTAINER := HELLINFIX
+RISING_CHIPSET := mt6781
+
 PRODUCT_NAME := lineage_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_MANUFACTURER := Realme
