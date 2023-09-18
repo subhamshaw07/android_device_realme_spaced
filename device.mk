@@ -16,6 +16,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Parts
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
+# Apps
+$(call inherit-product-if-exists, packages/apps/prebuilt-apps/prebuilt-apps.mk)
+
 # Speed profile services and wifi services to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 

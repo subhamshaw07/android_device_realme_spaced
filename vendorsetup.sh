@@ -23,4 +23,7 @@ fi
 VT-IMS=vendor/realme/ims-spaced/ims-spaced-vendor.mk
 if ! [ -a $VT-IMS ]; then git clone https://github.com/realme-mt6781-dev/android_vendor_realme_ims-spaced vendor/realme/ims-spaced
 fi
+PA=packages/apps/prebuilt-apps/prebuilt-apps.mk
+if ! [ -a $PA ]; then git clone --depth=1 https://gitlab.com/HELLINFIX/packages_apps_prebuilt-apps  packages/apps/prebuilt-apps
+fi
 echo end cloning
